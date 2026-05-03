@@ -10,13 +10,13 @@ basic.forever(function () {
     ESP8266_IoT.connectThingSpeak()
     ESP8266_IoT.setData(
     "RL9M1HNE38H8OIOJ",
-    1,
-    2,
-    3,
-    4,
-    5,
-    6,
-    7
+    randint(1, 7),
+    randint(1, 7),
+    randint(1, 7),
+    randint(1, 7),
+    randint(1, 7),
+    randint(1, 7),
+    randint(1, 7)
     )
     ESP8266_IoT.uploadData()
     basic.pause(1000000)
